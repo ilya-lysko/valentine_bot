@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-enum import Enum
+from enum import Enum
 
 class States(Enum):
     """
@@ -9,4 +9,6 @@ class States(Enum):
     S_START = "0"  # Начало нового диалога
     S_ENTER_NAME = "1"
     S_ENTER_AGE = "2"
-    S_SEND_PIC = "3"
+    S_ENTER_SEX = "3"
+    S_SEND_USER = "4"
+    S_WAIT = "5"
