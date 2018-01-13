@@ -1,11 +1,12 @@
-from enum import Enum
+# -*- coding: utf-8 -*-
+enum import Enum
 
 class States(Enum):
-	"""
-	Enum для состояний беседы
-	"""
-	S_START = "0" # Начало беседы
-	S_ENTER_NAME = "1" # Ввод имени
-	S_ENTER_AGE = "2" # Ввод возраста
-	S_ENTER_SEX = "3" # Ввод пола
-	S_SEND_USER = "4" # Подбор партнера
+    """
+    Мы используем БД Vedis, в которой хранимые значения всегда строки,
+    поэтому и тут будем использовать тоже строки (str)
+    """
+    S_START = "0"  # Начало нового диалога
+    S_ENTER_NAME = "1"
+    S_ENTER_AGE = "2"
+    S_SEND_PIC = "3"
